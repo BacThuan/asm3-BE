@@ -12,8 +12,7 @@ const cartRouter = require("./routes/cart");
 const orderRouter = require("./routes/order");
 const chatRouter = require("./routes/chat");
 
-const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.9f97tqr.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority`;
-
+const MONGODB_URI = `mongodb+srv://bacthuan0175:hiimgosu99@cluster0.9f97tqr.mongodb.net/economic_shop?retryWrites=true&w=majority`;
 const store = new MongoDBStore({
   uri: MONGODB_URI,
   collection: "sessions",
