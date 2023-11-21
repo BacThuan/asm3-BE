@@ -43,9 +43,9 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      httpOnly: false,
-      sameSite: "lax", // "lax" khi dùng deploy,
-      secure: false, // tắt khi dùng local host, bật khi deploy
+      httpOnly: true,
+      sameSite: "none", // "none" khi dùng deploy,
+      secure: true, // tắt khi dùng local host, bật khi deploy
       maxAge: 1000 * 60 * 60,
     },
     store: store,
